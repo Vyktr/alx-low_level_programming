@@ -1,17 +1,17 @@
 #include "main.h"
 /**
  * _strchr - Entry point
- * @s: input
- * @c: input
+ * @x: input
+ * @y: input
  * Return: Always 0 (Success)
  */
-char *_strchr(char *s, char c)
+char *_strchr(char *x, char y)
 {
-	int i = 0;
-	for (; s[i] >= '\0'; i++)
+	int c = 0;
+	for (; x[c] >= '\0'; c++)
 	{
-		if (s[i] == c)
-			return (&s[i]);
+		if (x[c] == y)
+			return (&x[c]);
 	}
 	return (0);
 }
